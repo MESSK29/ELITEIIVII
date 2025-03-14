@@ -1,0 +1,122 @@
+/* Importing a stylish font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 15px 15px;
+}
+
+/* Container */
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Card Design */
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    width: 50%;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Form and Input Fields */
+form input, select, .card input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+form input:focus, select:focus, .card input:focus {
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.radio-group input {
+    display: none;
+}
+
+.radio-group label {
+    padding: 10px 20px;
+    background: #ff4f7c;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.radio-group input:checked + label {
+    background: #fff;
+    color: #ff4f7c;
+    font-weight: bold;
+    border: 2px solid #ff4f7c;
+}
+
+/* Button */
+button {
+    background-color: #ff4f7c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #fff;
+    color: #ff4f7c;
+    font-weight: bold;
+    border: 2px solid #ff4f7c;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    border-radius: 15px 15px 0 0;
+}

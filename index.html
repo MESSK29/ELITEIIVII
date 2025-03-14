@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite27 - Women's Day Seminar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Elite27</h1>
+        <p>Women's Day Seminar Evaluation</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Enter Student Marks</h2>
+            <form id="marksForm">
+                <input type="text" id="rollNumber" placeholder="Roll Number" required>
+                <label for="section">Select Section:</label>
+                <select id="section" required>
+                    <option value="" disabled selected>Choose Section</option>
+                    <option value="2CSMA">2CSMA</option>
+                    <option value="2CSMB">2CSMB</option>
+                    <option value="2CSMC">2CSMC</option>
+                    <option value="3CSMA">3CSMA</option>
+                    <option value="3CSMB">3CSMB</option>
+                    <option value="3CSMC">3CSMC</option>
+                    <option value="4CSMA">4CSMA</option>
+                    <option value="4CSMB">4CSMB</option>
+                    <option value="4CSMC">4CSMC</option>
+                </select>
+                <label>Select Session:</label>
+                <div class="radio-group">
+                    <input type="radio" id="morning" name="session" value="morning">
+                    <label for="morning">Morning</label>
+                    <input type="radio" id="evening" name="session" value="evening">
+                    <label for="evening">Evening</label>
+                </div>
+                <input type="number" id="marks" placeholder="Enter Marks" required>
+                <button type="submit">Add Marks</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Download Winners List</h2>
+            <input type="text" id="winnersCode" placeholder="Enter code for winners" required>
+            <button onclick="downloadWinners()">Download Excel</button>
+        </div>
+
+        <div class="card">
+            <h2>Download Stored Data</h2>
+            <input type="text" id="dataCode" placeholder="Enter code for data" required>
+            <button onclick="downloadResults()">Download Excel</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Elite27 - Empowering Women in Education</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
